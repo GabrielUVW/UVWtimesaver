@@ -1,0 +1,51 @@
+UVW: UVWtimesaver
+
+EXECUTIVE SUMMARY
+Overview - The Quick Pitch
+
+This is a project for UVW to automate the calls process, automating the sending of preformatted messages to clients upon notice of cancelation and contact information submission. 
+
+The Problem:
+
+Today staff make use of four key resources for contacting clients. They are the following:
+	-Go Cardless
+	-Zetkin
+	-Whatsapp
+	-Google Contacts
+
+The Problem
+Here is where you describe the problem that you are solving.
+
+While the process now is viable with one person budgeting time over a week to reach out to clients cancelling or newly joined to UVW, 
+by no means is a one by one basis of correspondance scalable or complete in a way additional messaging in tandem with personal correspondance would be. 
+
+
+The Solution
+
+Software infrastructure connecting the sources can be built up and be functional as isolated parts or "modular". 
+Because of this as interest in any automation of rescheduling of outreach changes so to can the messages and sophistication.
+
+
+Highlights
+Here you can show the most important market analysis and data that captures the potential your solution can have in
+the marketplace. We recommend pulling the most compelling highlights from your plan or proposal. You can also talk
+about the strengths and advantages of your staff and any partnerships you may have.
+
+[Optional caption for graph]
+
+CONFIDENTIAL Page 1
+
+Executive Summary Template © 2019 Vertex42 LLC
+
+Keys to Success
+Discuss the main steps necessary for your business to be successful.
+● What is your marketing strategy?
+● What resources will you need? (partnerships, funding, materials)
+● What does your timeline look like?
+
+Financial Highlights
+If part of the purpose of your proposal is to seek funding, you may want to dedicate a full section to talk about the
+funding you currently have and what funding you'll need.
+● What is your 3-year earnings projection?
+● When will you break even?
+● How will investors be repaid?
