@@ -9,9 +9,13 @@ Luckily the key tools currently being used provide accessible and affordable pro
 This is a project for UVW to automate processes across the following reasources:
 
 	-Go Cardless
+   -Free
 	-Zetkin
+   -Free
 	-Whatsapp
+   -Free until 1000+ messages a month.
 	-Google Contacts
+    -Free
 
 Development:
 
