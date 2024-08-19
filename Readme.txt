@@ -1,4 +1,11 @@
-This is a project for UVW to automate the calls process utilizing the following reasources:
+# Proposal
+
+UVW has currently handels a strong population of memebers however scalable solutions for handeling cancelations ans on-boarding have been a labour intensive pain point. 
+
+Luckily the key tools currently being used provide accessible and affordable programmatic protocals so that automation can easily be built to provide a scalable solution.
+
+
+This is a project for UVW to automate processes across the following reasources:
 
 	-Go Cardless
 	-Zetkin
