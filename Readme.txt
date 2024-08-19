@@ -15,7 +15,7 @@ This is a project for UVW to automate processes across the following reasources:
 	-Whatsapp
    -Free until 1000+ messages a month.
 	-Google Contacts
-    -Free
+    -Free within a monthly credit limit.
 
 Development:
 
