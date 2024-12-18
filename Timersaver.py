@@ -152,11 +152,14 @@ def sendwhatmsg_instantly(self,
     else:
         print("set your default browser to chrome or firefox or microsoft egde to use this feature.")
     get_default_browser()
+    Tk().clipboard_clear()
     while True:
         pg.press('enter')
+        pg.hotkey('ctrl', 'a')
         pg.hotkey('ctrl', 'c')
-        data = Tk().clipboard_get()
-        if not data:
+        try:
+            data = Tk().clipboard_get()
+        except:
             break
     log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
     if tab_close:
