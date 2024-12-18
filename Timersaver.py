@@ -6,7 +6,7 @@ import os
 import time
 import requests
 from tkinter import *
-from tkinter import TK
+from tkinter import Tk
 import re
 import pyautogui as pg
 import webbrowser as web
