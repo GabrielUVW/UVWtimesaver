@@ -1,4 +1,4 @@
-import pywhatkit
+from pywhatkit.core import core, exceptions, log
 import openpyxl
 from datetime import datetime
 import sys
@@ -6,8 +6,10 @@ import os
 import time
 import requests
 from tkinter import *
+from tkinter import TK
 import re
-  
+import pyautogui as pg
+import webbrowser as web
 # import filedialog module
 from tkinter import filedialog
 from tkinter import messagebox
@@ -104,9 +106,61 @@ class Simple():
         # Backend code is written to throttle for 4 seconds or breaking
         # 7 seconds seems to be the sweet spot
 
-        pywhatkit.sendwhatmsg_instantly(phone_number, msg, 20, True, 20)
+        self.sendwhatmsg_instantly(phone_number, msg, 20, True, 20)
         # pywhatkit.core.close_tab(wait_time=5)
         print("Message Successfully sent")
+
+def sendwhatmsg_instantly(self,
+        phone_no: str,
+        message: str,
+        wait_time: int = 15,
+        tab_close: bool = False,
+        close_time: int = 3,
+) -> None:
+    """Send WhatsApp Message Instantly"""
+
+    if not core.check_number(number=phone_no):
+        raise exceptions.CountryCodeException("Country Code Missing in Phone Number!")
+
+    phone_no = phone_no.replace(" ", "")
+    if not fullmatch(r"^\+?[0-9]{2,4}\s?[0-9]{9,15}", phone_no):
+        raise exceptions.InvalidPhoneNumber("Invalid Phone Number.")
+
+    web.open(f"https://web.whatsapp.com/send?phone={phone_no}")
+    time.sleep(wait_time)
+    index = 0
+    length = len(message)
+    while index < length:
+        letter = message[index]
+        pg.write(letter)
+        if letter == ":":
+            index += 1
+            while index < length:
+                letter = message[index]
+                if letter == ":":
+                    pg.press("enter")
+                    break
+                pg.write(letter)
+                index += 1
+        index += 1
+    default_browser= get_default_browser()
+    time.sleep(5)
+    if default_browser != "Unknown":
+
+    # Set the frontmost process to the default browser
+        set_frontmost_process(default_browser)
+    else:
+        print("set your default browser to chrome or firefox or microsoft egde to use this feature.")
+    get_default_browser()
+    while True:
+        pg.press('enter')
+        pg.hotkey('ctrl', 'c')
+        data = Tk().clipboard_get()
+        if not data:
+            break
+    log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
+    if tab_close:
+        core.close_tab(wait_time=close_time)
 
 if __name__ == "__main__":
     #print('Arguements: %s'%sys.argv)
